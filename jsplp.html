@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Login Portal</title>
+    <link rel="stylesheet" href="jsplp.css">
+    
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">STUDENT PORTAL</div>
+        
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Enterprise Email</label>
+                <input type="email" id="email" autocomplete="username">
+                <div class="error-message" id="emailError">Invalid enterprise email format</div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" autocomplete="current-password">
+                <div class="password-strength">
+                    <div class="strength-bar" id="strengthBar"></div>
+                </div>
+                <div class="error-message" id="passwordError">Password must be at least 8 characters</div>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="success-message" id="successMessage">
+            Authentication successful. Redirecting...
+        </div>
+    </div>
+<script src="jsplp.js"></script>
+   
+</body>
+</html>
